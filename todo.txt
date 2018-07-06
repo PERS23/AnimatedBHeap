@@ -1,1 +1,2 @@
 todo:
+* comments on circle label

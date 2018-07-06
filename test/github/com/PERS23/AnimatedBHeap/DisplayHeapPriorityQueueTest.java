@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 
 public class DisplayHeapPriorityQueueTest {
 
-    private DisplayHeapPriorityQueue<Integer, Shape> instance;
+    private DisplayHeapPriorityQueue<Integer, CircleLabel> instance;
 
     @Before
     public void setUp() throws Exception {
@@ -19,13 +19,13 @@ public class DisplayHeapPriorityQueueTest {
 
     @org.junit.Test
     public void getNextSwapShouldReturnDistinctPairsIfSwapsOccurred() {
-        instance.insert(5, new Circle(20));
-        instance.insert(4, new Circle(50));
-        instance.insert(3, new Circle(30));
+        instance.insert(5, new CircleLabel("_"));
+        instance.insert(4, new CircleLabel("_"));
+        instance.insert(3, new CircleLabel("_"));
 
-        Pair<Shape, Shape> firstSwap = instance.getNextSwap();
-        Pair<Shape, Shape> secondSwap = instance.getNextSwap();
-        Pair<Shape, Shape> thirdSwap = instance.getNextSwap();
+        Pair<CircleLabel, CircleLabel> firstSwap = instance.getNextSwap();
+        Pair<CircleLabel, CircleLabel> secondSwap = instance.getNextSwap();
+        Pair<CircleLabel, CircleLabel> thirdSwap = instance.getNextSwap();
 
         assertNotNull(firstSwap);
         assertNotEquals(firstSwap.getKey(), firstSwap.getValue());

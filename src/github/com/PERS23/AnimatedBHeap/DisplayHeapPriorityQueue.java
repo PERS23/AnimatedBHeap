@@ -7,14 +7,14 @@ import net.datastructures.*;
 
 import java.util.ArrayDeque;
 
-public class DisplayHeapPriorityQueue<K, V extends Node> extends HeapPriorityQueue<K,V> {
+public class DisplayHeapPriorityQueue<K, V extends CircleLabel> extends HeapPriorityQueue<K,V> {
 
-    private static final double MIN_X_DIST = 100;
-    private static final double MIN_Y_DIST = 100;
+    public static final double MIN_X_DIST = 100;
+    public static final double MIN_Y_DIST = 100;
 
     private Queue<Pair<V, V>> swapQueue = new LinkedQueue<>();
 
-    private static <K, V extends Node> int layout(DisplayHeapPriorityQueue<K, V> tree, int node, int depth, int x) {
+    private static <K, V extends CircleLabel> int layout(DisplayHeapPriorityQueue<K, V> tree, int node, int depth, int x) {
         if (tree.left(node) < tree.size()) {
             x = layout(tree, tree.left(node), depth + 1, x);                     // resulting x will be increased
         }
@@ -28,7 +28,7 @@ public class DisplayHeapPriorityQueue<K, V extends Node> extends HeapPriorityQue
         return x;
     }
 
-    public static <K, V extends Node> java.util.List<Line> getEdges(DisplayHeapPriorityQueue<K, V> tree) {
+    public static <K, V extends CircleLabel> java.util.List<Line> getEdges(DisplayHeapPriorityQueue<K, V> tree) {
         java.util.Deque<Integer> stack = new ArrayDeque<Integer>();
         java.util.List<Line> edges = new java.util.ArrayList<>();
 
@@ -37,24 +37,24 @@ public class DisplayHeapPriorityQueue<K, V extends Node> extends HeapPriorityQue
 
         while (!stack.isEmpty()) {
             current = stack.pop();
-            Node parent = tree.heap.get(current).getValue();
+            CircleLabel parent = tree.heap.get(current).getValue();
 
             int left = tree.left(current), right = tree.right(current);
 
             if (left < tree.size()) {
-                Node leftChild = tree.heap.get(left).getValue();
+                CircleLabel leftChild = tree.heap.get(left).getValue();
                 if (leftChild != null) {
                     stack.push(left);
-                    Line leftEdge = new Line(parent.getLayoutX(), parent.getLayoutY(), leftChild.getLayoutX(), leftChild.getLayoutY());
+                    Line leftEdge = new Line(parent.getCenterX(), parent.getCenterY(), leftChild.getCenterX(), leftChild.getCenterY());
                     edges.add(leftEdge);
                 }
             }
 
             if (right < tree.size()) {
-                Node rightChild = tree.heap.get(right).getValue();
+                CircleLabel rightChild = tree.heap.get(right).getValue();
                 if (rightChild != null) {
                     stack.push(right);
-                    Line rightEdge = new Line(parent.getLayoutX(), parent.getLayoutY(), rightChild.getLayoutX(), rightChild.getLayoutY());
+                    Line rightEdge = new Line(parent.getCenterX(), parent.getCenterY(), rightChild.getCenterX(), rightChild.getCenterY());
                     edges.add(rightEdge);
                 }
             }

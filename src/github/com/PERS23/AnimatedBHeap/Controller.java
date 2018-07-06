@@ -3,13 +3,11 @@ package github.com.PERS23.AnimatedBHeap;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
-import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
-import javafx.scene.text.Font;
-import javafx.scene.text.TextAlignment;
+import javafx.util.Duration;
+import javafx.util.Pair;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -18,7 +16,7 @@ import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
 
-    private DisplayHeapPriorityQueue<Integer, Label> mHeapPQ = new DisplayHeapPriorityQueue<>();
+    private DisplayHeapPriorityQueue<Integer, CircleLabel> mHeapPQ = new DisplayHeapPriorityQueue<>();
     private List<Line> mTreeEdges = new ArrayList<>();
 
     @FXML private Pane tree_display;
@@ -38,16 +36,13 @@ public class Controller implements Initializable {
         Integer key = retrieveKey();
         // validate entry
         // Create shape
-        Label node = new Label(Integer.toString(key) + "_");
-        node.setFont(new Font(28));
+        CircleLabel node = new CircleLabel(Integer.toString(key));
         // Add to tree_display pane
         tree_display.getChildren().add(node);
         // add shape and key to PQ
         mHeapPQ.insert(key, node);
         // Loop over all swaps and do animation for each
-
-        // Redo all the edges
-        redrawEdges();
+        doSwapAnimations();
     }
 
     @FXML
@@ -65,13 +60,40 @@ public class Controller implements Initializable {
 
     }
 
-    private void doSwapAnimation(Label nodeA, Label nodeB) {
+    private void doSwapAnimations() {
+        Pair<CircleLabel, CircleLabel> firstPair = mHeapPQ.getNextSwap();
+        if (firstPair != null) {
+            final BezierHeapSwapTransition animation = new BezierHeapSwapTransition(new Duration(400));
 
+            clearEdges();
+            animation.setNodes(firstPair.getKey(), firstPair.getValue());
+            animation.play();
+
+            animation.setOnFinished(e -> {
+                Pair<CircleLabel, CircleLabel> nextPair = mHeapPQ.getNextSwap();
+                if (nextPair != null) {
+                    animation.setNodes(nextPair.getKey(), nextPair.getValue());
+                    animation.playFromStart();
+                } else {
+                    drawEdges();
+                }
+            });
+        } else {
+            clearEdges();
+            drawEdges();
+        }
     }
 
-    private void redrawEdges() {
+    private void clearEdges() {
         tree_display.getChildren().removeAll(mTreeEdges);
+        mTreeEdges = null;
+    }
+
+    private void drawEdges() {
         mTreeEdges = DisplayHeapPriorityQueue.getEdges(mHeapPQ);
-        tree_display.getChildren().addAll(mTreeEdges);
+        for (Line edge : mTreeEdges) {
+            tree_display.getChildren().add(0, edge);
+            edge.toBack();
+        }
     }
 }
