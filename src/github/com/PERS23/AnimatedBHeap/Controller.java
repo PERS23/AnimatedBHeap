@@ -40,6 +40,7 @@ public class Controller implements Initializable {
             tree_display.getChildren().add(node);
 
             mHeapPQ.insert(key, node);
+            disableControls();
             playUpheapAnimation();
         } catch (NumberFormatException nfe) {                 // Parse int failed to recognise num, so it can't be added
             key_entry.setText("* Error - Invalid Number");
@@ -48,7 +49,20 @@ public class Controller implements Initializable {
 
     @FXML
     private void removeMin() {
+        disableControls();
         playDownheapAnimation(mHeapPQ.removeMin().getValue());
+    }
+
+    private void enableControls() {
+        add_key_button.setDisable(false);
+        remove_min_button.setDisable(false);
+        reset_button.setDisable(false);
+    }
+
+    private void disableControls() {
+        add_key_button.setDisable(true);
+        remove_min_button.setDisable(true);
+        reset_button.setDisable(true);
     }
 
     @FXML
@@ -74,17 +88,20 @@ public class Controller implements Initializable {
                     animation.playFromStart();
                 } else { // Insertion was already immediately redrawn, and swaps recorrect it so drawing edges at the end will always be correct
                     drawEdges();
+                    enableControls();
                 }
             });
         } else {                                                                  // Edges do need to be redrawn however
             clearEdges();
             drawEdges();
+            enableControls();
         }
     }
 
     private void playDownheapAnimation(CircleLabel removedNode) {
         if (mHeapPQ.isEmpty()) {               // The heap is empty, so we can just immediately remove it from the scene
             tree_display.getChildren().remove(removedNode);
+            enableControls();
         } else {
             Pair<CircleLabel, CircleLabel> firstPair = mHeapPQ.getNextSwap();
             final BezierHeapSwapTransition animation = new BezierHeapSwapTransition(new Duration(SWAP_TIME_MS));
@@ -104,6 +121,7 @@ public class Controller implements Initializable {
                 } else {
                     mHeapPQ.redraw(); // Have to redraw after all swaps, otherwise the tree might be wider than is expected
                     drawEdges();
+                    enableControls();
                 }
             });
         }
