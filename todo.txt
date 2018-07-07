@@ -1,6 +1,0 @@
-todo:
-* comments
-* investigate adding circle padding - DONE
-* implement remove operation - DONE
-* implement reset operation - DONE
-* Add animation speed adjustment
