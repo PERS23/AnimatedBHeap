@@ -9,8 +9,8 @@ import java.util.ArrayDeque;
 
 public class DisplayHeapPriorityQueue<K, V extends CircleLabel> extends HeapPriorityQueue<K,V> {
 
-    public static final double MIN_X_DIST = 100;
-    public static final double MIN_Y_DIST = 100;
+    private static final double MIN_X_DIST = 100;
+    private static final double MIN_Y_DIST = 100;
 
     private Queue<Pair<V, V>> swapQueue = new LinkedQueue<>();
 
@@ -29,12 +29,17 @@ public class DisplayHeapPriorityQueue<K, V extends CircleLabel> extends HeapPrio
     }
 
     public static <K, V extends CircleLabel> java.util.List<Line> getEdges(DisplayHeapPriorityQueue<K, V> tree) {
+        if (tree.heap.isEmpty()) {
+            return null;                           // Can't return any edges if there ain't any nodes in the first place
+        }
+
         java.util.Deque<Integer> stack = new ArrayDeque<Integer>();
         java.util.List<Line> edges = new java.util.ArrayList<>();
 
         Integer current = 0;
         stack.push(current);
 
+                    // Simple unravelled recursion where we just visit all nodes and draw a line from them to the parent
         while (!stack.isEmpty()) {
             current = stack.pop();
             CircleLabel parent = tree.heap.get(current).getValue();
@@ -69,30 +74,16 @@ public class DisplayHeapPriorityQueue<K, V extends CircleLabel> extends HeapPrio
         Entry<K,V> newest = new PQEntry<>(key, value);
         heap.add(newest);                                                                  // add to the end of the list
 
-        layout(this, 0, 0, 0); // Redraw the tree so element is removed and is ready for swap anim
+        redraw();                                    // Redraw the tree so element is removed and is ready for swap anim
 
         upheap(heap.size() - 1);                                                          // upheap newly added entry
         return newest;
     }
 
     @Override
-    public Entry<K, V> removeMin() {
-        if (heap.isEmpty()) return null;
-        Entry<K,V> answer = heap.get(0);
-        swap(0, heap.size() - 1);                                                   // put minimum item at the end
-        heap.remove(heap.size() - 1);                                              // and remove it from the list;
-
-        layout(this, 0, 0, 0);
-
-        downheap(0);                                                                             // then fix new root
-        return answer;
-    }
-
-    @Override
     protected void swap(int i, int j) {
                                   // Add the swap to the queue so the sys can correctly draw the bubbling steps in order
         swapQueue.enqueue(new Pair<>(heap.get(i).getValue(), heap.get(j).getValue()));
-
         Entry<K,V> temp = heap.get(i);
         heap.set(i, heap.get(j));
         heap.set(j, temp);
@@ -104,5 +95,15 @@ public class DisplayHeapPriorityQueue<K, V extends CircleLabel> extends HeapPrio
      */
     public Pair<V, V> getNextSwap() {
         return swapQueue.dequeue();
+    }
+
+    public int numOfSwaps() {
+        return swapQueue.size();
+    }
+
+    public void redraw() {
+        if (!heap.isEmpty()) {
+            layout(this, 0, 0, 0);
+        }
     }
 }

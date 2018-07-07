@@ -21,9 +21,9 @@
                 <TextField fx:id="key_entry" />
                 <Button fx:id="add_key_button" mnemonicParsing="false" text="Add Key" onAction="#addKey" />
                 <Separator orientation="VERTICAL" />
-                <Button fx:id="remove_min_button" mnemonicParsing="false" text="Remove Min" />
+                <Button fx:id="remove_min_button" mnemonicParsing="false" text="Remove Min" onAction="#removeMin" />
                 <Separator orientation="VERTICAL" />
-                <Button fx:id="reset_button" mnemonicParsing="false" text="Reset" />
+                <Button fx:id="reset_button" mnemonicParsing="false" text="Reset" onAction="#resetTreeAndDisplay"/>
             </items>
         </ToolBar>
     </top>

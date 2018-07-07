@@ -16,7 +16,7 @@ import java.io.IOException;
 
 public class CircleLabel extends StackPane {
 
-    private static final double PADDING = 10.0;
+    private static final double PADDING = 20.0;   // Used to extend the circle's radius beyond just the width of the txt
 
     private Text mLabel;
     private Circle mCircle;
@@ -27,12 +27,12 @@ public class CircleLabel extends StackPane {
         mLabel = createText(text);
         mCircle = encircle(mLabel);
 
-        this.getChildren().addAll(mCircle, mLabel);
+        this.getChildren().addAll(mCircle, mLabel);        // Stack pane (super) will auto center the text in the circle
     }
 
     private Text createText(String string) {
         Text text = new Text(string);
-        text.setBoundsType(TextBoundsType.VISUAL);
+        text.setBoundsType(TextBoundsType.VISUAL);       // Visual bounds so we can det how big the circle should min be
         text.setStyle("-fx-font-family: \"Segoe UI Light\";" +
                       "-fx-font-size: 48px;"
         );
@@ -50,7 +50,7 @@ public class CircleLabel extends StackPane {
     }
 
     private double getTextWidth(Text text) {
-        new Scene(new Group(text));
+        new Scene(new Group(text));        // Creating new scene temporarily, so we can calc width after css application
         text.applyCss();
 
         return text.getLayoutBounds().getWidth();

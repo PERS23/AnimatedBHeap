@@ -5,8 +5,6 @@ import javafx.scene.Node;
 import javafx.util.Duration;
 
 public class BezierHeapSwapTransition extends Transition {
-    private static final double QUAD_BEZ_DIST = DisplayHeapPriorityQueue.MIN_Y_DIST;
-
     private CircleLabel mNodeA;
     private CircleLabel mNodeB;
 
@@ -33,33 +31,24 @@ public class BezierHeapSwapTransition extends Transition {
         endX = nodeB.getLayoutX();
         endY = nodeB.getLayoutY();
 
-        // First 2 cases where A is left child of B, or vice versa
-        if (startX < endX && startY > endY) {
+        final double QUAD_BEZ_DIST = Math.abs(startY - endY);
+
+        // Fundamentally the bezier control points are calculated to be above/below A or B, by their abs diff in y
+        // These two cases correspond to where A is L child of B, and A is R child of B
+        if ((startX < endX && startY > endY) || (startX > endX && startY > endY)) {
             bezierX = startX;
             bezierY = startY - QUAD_BEZ_DIST;
 
             oppositeBezierX = endX;
             oppositeBezierY = endY + QUAD_BEZ_DIST;
-        }  else if (startX > endX && startY < endY) {
-            bezierX = startX;
-            bezierY = startY + QUAD_BEZ_DIST;
-
-            oppositeBezierX = endX;
-            oppositeBezierY = endY - QUAD_BEZ_DIST;
         }
-        // Last 2 cases where B is right child of A, or vice versa
-        else if (startX < endX && startY < endY) {
+        // These two cases here are where B is L child of A, and B is R child of A
+        else if ((startX > endX && startY < endY) || (startX < endX && startY < endY)) {
             bezierX = startX;
             bezierY = startY + QUAD_BEZ_DIST;
 
             oppositeBezierX = endX;
             oppositeBezierY = endY - QUAD_BEZ_DIST;
-        } else if (startX > endX && startY > endY) {
-            bezierX = startX;
-            bezierY = startY - QUAD_BEZ_DIST;
-
-            oppositeBezierX = endX;
-            oppositeBezierY = endY + QUAD_BEZ_DIST;
         }
     }
 

@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/BezierHeapSwapTransition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go_over.txt" beforeDir="false" afterPath="$PROJECT_DIR$/go_over.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AnimatedBHeap/github/com/PERS23/AnimatedBHeap/CircleLabel.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AnimatedBHeap/github/com/PERS23/AnimatedBHeap/MainUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AnimatedBHeap/github/com/PERS23/AnimatedBHeap/MainUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/CircleLabel.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/BezierHeapSwapTransition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/BezierHeapSwapTransition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/CircleLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/CircleLabel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/DisplayHeapPriorityQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/DisplayHeapPriorityQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/MainUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/MainUI.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/github/com/PERS23/AnimatedBHeap/DisplayHeapPriorityQueueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/github/com/PERS23/AnimatedBHeap/DisplayHeapPriorityQueueTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/todo.txt" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -75,50 +71,22 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="76" column="24" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
+            <state relative-caret-position="2057">
+              <caret line="121" column="30" lean-forward="true" selection-start-line="121" selection-start-column="30" selection-end-line="121" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1429#1430#0" expanded="true" />
+                <element signature="e#1498#1499#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todo.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/todo.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CircleLabel.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/CircleLabel.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DisplayHeapPriorityQueue.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/DisplayHeapPriorityQueue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="70" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BezierHeapSwapTransition.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/BezierHeapSwapTransition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -153,24 +121,25 @@
         <option value="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/CircleText.fxml" />
         <option value="$PROJECT_DIR$/test/github/com/PERS23/AnimatedBHeap/DisplayHeapPriorityQueueTest.java" />
         <option value="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/CircleLabel.fxml" />
-        <option value="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/MainUI.fxml" />
-        <option value="$PROJECT_DIR$/todo.txt" />
         <option value="$PROJECT_DIR$/go_over.txt" />
         <option value="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/BezierCurveInterpolator.java" />
         <option value="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/SwapInterpolator.java" />
-        <option value="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/DisplayHeapPriorityQueue.java" />
+        <option value="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/MainUI.fxml" />
+        <option value="$PROJECT_DIR$/todo.txt" />
         <option value="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/BezierHeapSwapTransition.java" />
-        <option value="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/Controller.java" />
         <option value="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/CircleLabel.java" />
+        <option value="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/Controller.java" />
+        <option value="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/DisplayHeapPriorityQueue.java" />
+        <option value="$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/Main.java" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1392" />
-    <option name="y" value="-75" />
-    <option name="width" value="1612" />
-    <option name="height" value="876" />
+    <option name="x" value="54" />
+    <option name="y" value="-8" />
+    <option name="width" value="1874" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
@@ -181,9 +150,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -206,6 +172,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -419,7 +388,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -429,7 +397,7 @@
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32925585" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32925585" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Terminal" order="12" />
       <window_info id="Capture Tool" order="5" />
@@ -447,12 +415,12 @@
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Changes" order="8" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="bottom" id="Profiler" order="9" />
       <window_info anchor="bottom" id="Problems" order="11" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Application Servers" order="13" />
+      <window_info anchor="right" id="Database" order="6" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -472,41 +440,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/MainUI.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -634,13 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/datastructures/HeapPriorityQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="157" column="18" lean-forward="true" selection-start-line="152" selection-start-column="3" selection-end-line="157" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/scene/shape/Shape.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
@@ -712,13 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/github/com/PERS23/AnimatedBHeap/DisplayHeapPriorityQueueTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="29" column="33" lean-forward="true" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/CircleLabel.fxml" />
     <entry file="file://$PROJECT_DIR$/go_over.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -741,24 +660,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/BezierCurveInterpolator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-          <folding>
-            <element signature="e#193#194#0" expanded="true" />
-            <element signature="e#217#218#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/animation/Animation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="396" column="25" selection-start-line="396" selection-start-column="25" selection-end-line="396" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/BezierCurveInterpolator.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/beans/property/DoublePropertyBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
@@ -766,76 +668,123 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/scene/Node.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="2467" column="24" selection-start-line="2467" selection-start-column="24" selection-end-line="2467" selection-end-column="24" />
-          <folding>
-            <element signature="e#100895#100896#0" expanded="true" />
-            <element signature="e#100955#100956#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/MainUI.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/animation/Animation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="55" selection-start-line="11" selection-start-column="55" selection-end-line="11" selection-end-column="55" />
+        <state relative-caret-position="140">
+          <caret line="690" column="22" selection-start-line="690" selection-start-column="22" selection-end-line="690" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/Controller.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/List.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="76" column="24" selection-start-line="76" selection-start-column="24" selection-end-line="76" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="415">
+          <caret line="260" column="12" selection-start-line="260" selection-start-column="12" selection-end-line="260" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/DisplayHeapPriorityQueue.java">
+    <entry file="file://$PROJECT_DIR$/test/github/com/PERS23/AnimatedBHeap/DisplayHeapPriorityQueueTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="70" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/BezierHeapSwapTransition.java">
+    <entry file="file://$PROJECT_DIR$/src/net/datastructures/HeapPriorityQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-765">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="613" column="22" selection-start-line="613" selection-start-column="22" selection-end-line="613" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/IllegalArgumentException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="35" column="6" selection-start-line="35" selection-start-column="6" selection-end-line="35" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/todo.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        <state relative-caret-position="85">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/MainUI.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="112" selection-start-line="25" selection-start-column="112" selection-end-line="25" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/BezierHeapSwapTransition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="45" column="82" selection-start-line="45" selection-start-column="82" selection-end-line="45" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/javafx-src.zip!/javafx/scene/text/TextBoundsType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="66" column="4" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/CircleLabel.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/DisplayHeapPriorityQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2057">
+          <caret line="121" column="30" lean-forward="true" selection-start-line="121" selection-start-column="30" selection-end-line="121" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1429#1430#0" expanded="true" />
+            <element signature="e#1498#1499#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/github/com/PERS23/AnimatedBHeap/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
