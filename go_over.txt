@@ -1,5 +1,0 @@
-go_over:
-* Stack pane
-* coord sys
-* bezier curves
-* interpolator
