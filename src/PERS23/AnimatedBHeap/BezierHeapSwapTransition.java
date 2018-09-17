@@ -1,7 +1,6 @@
-package github.com.PERS23.AnimatedBHeap;
+package PERS23.AnimatedBHeap;
 
 import javafx.animation.Transition;
-import javafx.scene.Node;
 import javafx.util.Duration;
 
 public class BezierHeapSwapTransition extends Transition {

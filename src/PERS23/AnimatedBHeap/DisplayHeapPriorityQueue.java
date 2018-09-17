@@ -1,6 +1,5 @@
-package github.com.PERS23.AnimatedBHeap;
+package PERS23.AnimatedBHeap;
 
-import javafx.scene.Node;
 import javafx.scene.shape.Line;
 import javafx.util.Pair;
 import net.datastructures.*;

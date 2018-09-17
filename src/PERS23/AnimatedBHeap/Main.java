@@ -1,4 +1,4 @@
-package github.com.PERS23.AnimatedBHeap;
+package PERS23.AnimatedBHeap;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

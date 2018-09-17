@@ -1,9 +1,6 @@
-package github.com.PERS23.AnimatedBHeap;
+package PERS23.AnimatedBHeap;
 
-import javafx.scene.shape.Circle;
-import javafx.scene.shape.Shape;
 import javafx.util.Pair;
-import net.datastructures.Entry;
 import org.junit.Before;
 
 import static org.junit.Assert.*;
